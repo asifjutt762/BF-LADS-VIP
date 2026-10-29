@@ -2,7 +2,7 @@
 A Boosting-Based Framework with LLM-Assisted Decision Support for Accurate Vehicular Insurance Prediction (BF-LADS-VIP)
 
 **Description**
-This project develops BF-LADS-VIP (A Boosting-Based Framework with LLM-Assisted Decision Support for Accurate Vehicular Insurance Prediction), integrating advanced boosting algorithms, including XGBoost, LightGBM, Gradient Boosting, and CatBoost, to predict motor insurance premiums based on vehicle and insurance-related attributes. The framework incorporates Large Language Model (LLM)-assisted decision support using LLaMA 3 to generate interpretable explanations of model predictions and risk profiles, supporting underwriters in making informed decisions. The study systematically evaluates model performance, predictive accuracy, and generalization under consistent experimental conditions, emphasizing accurate premium prediction, explainability, and human-in-the-loop decision-making to facilitate transparent, scalable, and trustworthy Artificial Intelligence (AI) adoption in vehicular insurance underwriting.
+This project develops BF-LADS-VIP (A Boosting-Based Framework with LLM-Assisted Decision Support for Accurate Vehicular Insurance Prediction), integrating advanced boosting algorithms, including XGBoost, LightGBM, Gradient Boosting, and CatBoost, to predict motor insurance premiums based on vehicle and insurance-related attributes. The framework incorporates large language model (LLM)-assisted decision support using LLaMA 3 to generate interpretable explanations of model predictions and risk profiles, supporting underwriters in making informed decisions. The study systematically evaluates model performance, predictive accuracy, and generalization under consistent experimental conditions, emphasizing accurate premium prediction, explainability, and human-in-the-loop decision-making to facilitate transparent, scalable, and trustworthy artificial intelligence (AI) adoption in vehicular insurance underwriting.
 
 **Dataset Information**
 The model was trained on the Kaggle Motor Insurance dataset comprising 3,998 vehicle records. Of these, 790 motorcycle-related records were filtered out to maintain the study's focus on other vehicle categories, leaving 3,208 records for processing and model development. The remaining dataset was used for data preprocessing, feature selection, model training, and evaluation to predict vehicular insurance premiums and support risk-informed underwriting decisions.
@@ -21,7 +21,7 @@ The proposed BF-LADS-VIP pipeline integrates the following components:
 - Evaluates model predictions against actual insurance premiums to assess learning performance and generalization.
 - Stores model training results for comparative analysis and subsequent decision support.
 3. Performance Evaluation
-- Computes regression performance metrics, including R^2, Root Mean Squared Error (RMSE), Mean Absolute Error (MAE), and Mean Absolute Percentage Error (MAPE), where appropriate.
+- Computes regression performance metrics, including R^2, root mean squared Error (RMSE), mean absolute error (MAE), and mean absolute percentage error (MAPE), where appropriate.
 - Compares training and testing performance to assess predictive accuracy and potential overfitting.
 - Identifies the best-performing boosting model based on the evaluation results.
 - Analyzes the models' ability to estimate motor insurance premiums accurately and consistently.
@@ -162,8 +162,8 @@ Developed and tested on:
 
 - The Gradient Boosting model shows strong and well-balanced predictive performance across all major evaluation metrics. 
 - The R^2 value of 0.9815 indicates that the model explains more than 98% of the total variation in insurance premium values, demonstrating a very strong relationship between the predicted and actual premiums. 
-- The Mean Absolute Error (MAE) of 7,570.71 shows that the average difference between the predicted and actual premium values is reasonably low, confirming the model’s high prediction accuracy. 
-- The Mean Squared Error (MSE) of 691,013,742.8 represents the squared size of error in prediction and demonstrates that the model is capable of controlling error effect, especially in high premium values, where the error effect is inherently high. 
-- In the same manner, the Root Mean Squared Error (RMSE) of 26,287.14 indicates that the model has a stable error control towards the bigger error in prediction, particularly in policies with high premium values. 
+- The mean absolute error (MAE) of 7,570.71 shows that the average difference between the predicted and actual premium values is reasonably low, confirming the model’s high prediction accuracy. 
+- The mean squared error (MSE) of 691,013,742.8 represents the squared size of error in prediction and demonstrates that the model is capable of controlling error effect, especially in high premium values, where the error effect is inherently high. 
+- In the same manner, the root mean squared error (RMSE) of 26,287.14 indicates that the model has a stable error control towards the bigger error in prediction, particularly in policies with high premium values. 
 - These findings affirm that the model is valid and can be trusted to be useful in predicting insurance premiums of vehicles.
 - However, the precision of prediction can be further increased by adding more behavioural and telematics-based variables. Future research may take into account hybrid strategies that involve using Gradient Boosting with deep learning models to improve performance. 
